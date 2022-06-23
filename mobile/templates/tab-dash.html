@@ -43,7 +43,7 @@
 
     <div class="list card">
       <div class="item">
-        <span class="text-muted text-small margin-bottom-5">Tickets Completed</span>
+        <span class="text-muted text-small margin-bottom-5">Tickets Concluídos</span>
         <h2 class="stat no-margin">{{closedPercent}}%</h2>
         <div style="position: absolute; top: 30px; right: 25px;">
           <pie-chart ng-model="closedPercentPie" options="{height: 24, width: 24, fill:['#29b955', '#ccc'], delimiter:'/' }"></pie-chart>
@@ -53,8 +53,8 @@
 
     <div class="list card">
       <div class="item">
-        <span class="text-muted text-small margin-bottom-5">Avg Reponse Time</span>
-        <h2 class="stat no-margin">{{ticketAvg}} hours</h2>
+        <span class="text-muted text-small margin-bottom-5">Tempo Médio de Resposta</span>
+        <h2 class="stat no-margin">{{ticketAvg}} horas</h2>
         <div style="position: absolute; top: 30px; right: 25px;">
           <line-chart ng-model="lineChart" options="{height: 28, width: 64, fill: '#d1e4f6', stroke: '#0288d1'}"></line-chart>
         </div>
@@ -63,7 +63,7 @@
 
     <div class="list card">
       <div class="item">
-        <h3 class="center">Top 5 Groups</h3>
+        <h3 class="center">Top 5 Grupos</h3>
       </div>
       <div class="item item-body">
         <div ng-controller="GraphCtrl" ng-init="renderGraphs()" style="text-align: center;">

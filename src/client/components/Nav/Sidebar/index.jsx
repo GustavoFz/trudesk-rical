@@ -106,44 +106,44 @@ class Sidebar extends React.Component {
               >
                 <Submenu id='tickets'>
                   <SubmenuItem
-                    text='Active'
+                    text='Ativo'
                     icon='timer'
                     href='/tickets/active'
                     active={activeSubItem === 'tickets-active'}
                   />
                   <SubmenuItem
-                    text='Assigned'
+                    text='Atribuido'
                     icon='assignment_ind'
                     href='/tickets/assigned'
                     active={activeSubItem === 'tickets-assigned'}
                   />
                   <SubmenuItem
-                    text='Unassigned'
+                    text='Não atribuido'
                     icon='person_add_disabled'
                     href='/tickets/unassigned'
                     active={activeSubItem === 'tickets-unassigned'}
                   />
                   <NavSeparator />
                   <SubmenuItem
-                    text='New'
+                    text='Novo'
                     icon='&#xE24D;'
                     href='/tickets/new'
                     active={activeSubItem === 'tickets-new'}
                   />
                   <SubmenuItem
-                    text='Pending'
+                    text='Pendente'
                     icon='&#xE629;'
                     href='/tickets/pending'
                     active={activeSubItem === 'tickets-pending'}
                   />
                   <SubmenuItem
-                    text='Open'
+                    text='Aberto'
                     icon='&#xE2C8;'
                     href='/tickets/open'
                     active={activeSubItem === 'tickets-open'}
                   />
                   <SubmenuItem
-                    text='Closed'
+                    text='Fechado'
                     icon='&#xE2C7;'
                     href='/tickets/closed'
                     active={activeSubItem === 'tickets-closed'}
@@ -152,7 +152,7 @@ class Sidebar extends React.Component {
               </SidebarItem>
             )}
             <SidebarItem
-              text='Messages'
+              text='Mensagens'
               icon='chat'
               href='/messages'
               class='navMessages'
@@ -160,7 +160,7 @@ class Sidebar extends React.Component {
             />
             {sessionUser && Helpers.canUser('accounts:view') && (
               <SidebarItem
-                text='Accounts'
+                text='Contas'
                 icon='&#xE7FD;'
                 href='/accounts'
                 class='navAccounts'
@@ -172,14 +172,14 @@ class Sidebar extends React.Component {
                   <Submenu id='accounts'>
                     <SubmenuItem
                       href={'/accounts/customers'}
-                      text={'Customers'}
+                      text={'Clientes'}
                       icon={'account_box'}
                       active={activeSubItem === 'accounts-customers'}
                     />
                     {sessionUser && Helpers.canUser('agent:*', true) && (
                       <SubmenuItem
                         href={'/accounts/agents'}
-                        text={'Agents'}
+                        text={'Agentes'}
                         icon={'account_circle'}
                         active={activeSubItem === 'accounts-agents'}
                       />
@@ -198,7 +198,7 @@ class Sidebar extends React.Component {
             )}
             {sessionUser && Helpers.canUser('groups:view') && (
               <SidebarItem
-                text='Customer Groups'
+                text='Grupo de Clientes'
                 icon='supervisor_account'
                 href='/groups'
                 class='navGroups'
@@ -210,7 +210,7 @@ class Sidebar extends React.Component {
             )}
             {sessionUser && Helpers.canUser('departments:view') && (
               <SidebarItem
-                text='Departments'
+                text='Departamentos'
                 icon='domain'
                 href='/departments'
                 class='navTeams'
@@ -219,7 +219,7 @@ class Sidebar extends React.Component {
             )}
             {sessionUser && Helpers.canUser('reports:view') && (
               <SidebarItem
-                text='Reports'
+                text='Relatórios'
                 icon='assessment'
                 href='/reports/generate'
                 class='navReports no-ajaxy'
@@ -255,7 +255,7 @@ class Sidebar extends React.Component {
 
             {sessionUser && Helpers.canUser('notices:view') && (
               <SidebarItem
-                text='Notices'
+                text='Notícias'
                 icon='campaign'
                 href='/notices'
                 class='navNotices'
@@ -265,7 +265,7 @@ class Sidebar extends React.Component {
 
             {sessionUser && Helpers.canUser('settings:edit') && (
               <SidebarItem
-                text='Settings'
+                text='Configurações'
                 icon='settings'
                 href='/settings/general'
                 class='navSettings no-ajaxy'
@@ -275,13 +275,13 @@ class Sidebar extends React.Component {
               >
                 <Submenu id='settings'>
                   <SubmenuItem
-                    text='General'
+                    text='Geral'
                     icon='tune'
                     href='/settings'
                     active={activeSubItem === 'settings-general'}
                   />
                   <SubmenuItem
-                    text='Accounts'
+                    text='Contas'
                     icon='tune'
                     href='/settings/accounts'
                     active={activeSubItem === 'settings-accounts'}

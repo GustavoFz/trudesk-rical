@@ -8,16 +8,16 @@
                     <div id="__ticketStatus" class="hide">{{data.ticket.status}}</div>
                     <div class="floating-ticket-status" data-ticketId="{{data.ticket._id}}">
                         {{#is data.ticket.status 0}}
-                                <div class="ticket-status ticket-new"><span>New</span></div>
+                                <div class="ticket-status ticket-new"><span>Novo</span></div>
                         {{/is}}
                         {{#is data.ticket.status 1}}
-                                <div class="ticket-status ticket-open"><span>Open</span></div>
+                                <div class="ticket-status ticket-open"><span>Aberto</span></div>
                         {{/is}}
                         {{#is data.ticket.status 2}}
-                                <div class="ticket-status ticket-pending"><span>Pending</span></div>
+                                <div class="ticket-status ticket-pending"><span>Pendente</span></div>
                         {{/is}}
                         {{#is data.ticket.status 3}}
-                                <div class="ticket-status ticket-closed"><span>Closed</span></div>
+                                <div class="ticket-status ticket-closed"><span>Fechado</span></div>
                         {{/is}}
                     </div>
                 </div>
@@ -26,7 +26,7 @@
             <div class="page-left full-height">
                 <div class="ticket-details-wrap clearfix">
                     <div class="ticket-assignee-wrap clearfix" style="position: relative;">
-                        <h4>Assignee</h4>
+                        <h4>Atribuído</h4>
                         {{#if data.ticket.assignee}}
                             <div class="ticket-assignee clearfix" data-ticketId="{{data.ticket._id}}">
                                 <a href="#" data-notifications="assigneeDropdown" data-updateui="assigneeList" style="float: left;" class="no-ajaxy">
@@ -48,7 +48,7 @@
                                     <img src="/uploads/users/defaultProfile.jpg" alt="" />
                                 </a>
                                 <div class="ticket-assignee-details">
-                                    <h3>No User Assigned</h3>
+                                    <h3>Nenhum Usuário Atribuído</h3>
                                 </div>
                             </div>
                         {{/if}}
@@ -56,20 +56,20 @@
                     <div class="ticket-details row" style="min-height: 0; height: auto; margin-bottom: 25px !important;">
                         <div class="small-6 columns nopadding">
                             <div class="" style="margin-bottom: 10px;">
-                                <span>Type:</span>
+                                <span>Tipo:</span>
                                 <p style="font-weight: 600; display: inline; margin-left: 28px;">{{data.ticket.type.name}}</p>
                             </div>
                         </div>
                         <div class="small-6 columns nopadding">
                             <div class="" style="margin-bottom: 10px;">
-                                <span>Priority:</span>
+                                <span>Prioridade:</span>
                                 <p style="font-weight: 600; display: inline; margin-left: 15px;">{{data.ticket.priorityname}}</p>
                             </div>
                         </div>
 
                         <div class="small-12 columns nopadding">
                             <div style="margin-bottom: 10px;">
-                                <span>Group:</span>
+                                <span>Grupo:</span>
                                 <p style="font-weight: 600; display: inline; margin-left: 20px;">{{data.ticket.group.name}}</p>
                             </div>
                         </div>
@@ -132,7 +132,7 @@
                         {{/foreach}}
                     </div>
                     <div class="history-items">
-                        <h4 style="padding-left: 50px;">Ticket History</h4>
+                        <h4 style="padding-left: 50px;">Histórico de Tickets</h4>
                         {{#foreach data.ticket.history}}
                             <div style="font-size: 12px; margin-bottom: 15px; margin-top: 20px; margin-left: 50px; ">
                                 <div style="font-weight: bold;">{{description}}</div>

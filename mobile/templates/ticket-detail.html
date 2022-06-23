@@ -22,9 +22,9 @@
       </div>
     </div>
     <div class="ticket-content">
-      <h4>Subject</h4>
+      <h4>Assunto</h4>
       <h5>{{ticket.subject}}</h5>
-      <h4>Issue</h4>
+      <h4>Problema</h4>
       <p class="issue-text" ng-bind-html='ticket.issue | sanitize'></p>
       <hr>
 
@@ -38,7 +38,7 @@
           </div>
           <h4 style="margin-bottom: 0; font-weight: 300;">{{comment.owner.fullname}}</h4>
           <span class="ticketDate" style="right: 10px;">{{comment.date | date: 'short'}}</span>
-          <span style="display: inline-block; color: white; line-height: 12px; border-radius: 2px; font-size: 10px; padding: 2px 4px; background: #e74c3c;" ng-if="comment.note.length > 1">NOTE</span>
+          <span style="display: inline-block; color: white; line-height: 12px; border-radius: 2px; font-size: 10px; padding: 2px 4px; background: #e74c3c;" ng-if="comment.note.length > 1">NOTA</span>
           <p class="comment-text" ng-bind-html='comment.comment | sanitize' ng-if="comment.comment.length > 0"></p>
           <p class="comment-text" ng-bind-html='comment.note | sanitize' ng-if="comment.note.length > 0"></p>
           <hr class="full">

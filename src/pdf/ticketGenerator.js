@@ -102,7 +102,7 @@ class TicketPDFGenerator {
     var comments = this.ticket.comments
     doc
       .fontSize(14)
-      .text('Comments')
+      .text('Comentários')
       .moveDown()
 
     if (comments.length < 1) doc.fontSize(11).text('No Comments')
@@ -168,7 +168,7 @@ class TicketPDFGenerator {
     doc
       .moveDown(4)
       .fontSize(14)
-      .text('Ticket History', 50)
+      .text('Histórico de Tickets', 50)
       .moveDown()
 
     if (history.length < 1) doc.text('No History')

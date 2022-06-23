@@ -102,7 +102,7 @@ class SingleTicketLoading extends React.Component {
           <div className='page-title-right noshadow'>
             <div className='page-top-comments uk-float-right'>
               <a role='button' className='btn no-ajaxy'>
-                Add Comment
+                Adicionar Comentário
               </a>
             </div>
             <div

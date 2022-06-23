@@ -77,13 +77,13 @@ class NotificationsDropdownPartial extends React.Component {
             className={'hoverUnderline no-ajaxy'}
             onClick={e => NotificationsDropdownPartial.clearNotificationsClicked(e)}
           >
-            Clear Notifications
+            Limpar Notificações
           </a>
         }
         footerComponent={
           <div className={'uk-text-center' + (this.notifications.length < 1 ? ' hide' : '')}>
             <a className={'no-ajaxy hoverUnderline'} onClick={this.props.onViewAllNotificationsClick}>
-              View All Notifications
+              Ver todas as notificações
             </a>
           </div>
         }

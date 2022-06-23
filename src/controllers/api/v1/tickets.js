@@ -884,7 +884,7 @@ apiTickets.delete = function (req, res) {
 }
 
 /**
- * @api {post} /api/v1/tickets/addcomment Add Comment
+ * @api {post} /api/v1/tickets/addcomment Adicionar Comentário
  * @apiName addComment
  * @apiDescription Adds comment to the given Ticket Id
  * @apiVersion 0.1.0

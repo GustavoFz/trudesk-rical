@@ -119,7 +119,7 @@ class OnlineUserListPartial extends React.Component {
             </div>
           </div>
 
-          <h5>More Conversations</h5>
+          <h5>Mais Conversas</h5>
           <div className='user-list-wrapper' style={{ lineHeight: 'normal' }}>
             <div
               className='online-list-search-box search-box'

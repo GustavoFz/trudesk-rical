@@ -483,7 +483,7 @@ class SingleTicketContainer extends React.Component {
                     {helpers.canUser('agent:*', true) && (
                       <div className='uk-width-1-1 padding-left-right-15'>
                         <div className='tru-card ticket-details pr-0 pb-0' style={{ height: 250 }}>
-                          Ticket History
+                          Histórico de Tickets
                           <hr style={{ padding: 0, margin: 0 }} />
                           <div className='history-items scrollable' style={{ paddingTop: 12 }}>
                             {this.ticket.history &&
@@ -529,7 +529,7 @@ class SingleTicketContainer extends React.Component {
                         helpers.scrollToBottom('.page-content-right', true)
                       }}
                     >
-                      Add Comment
+                      Adicionar Comentário
                     </a>
                   </div>
                   <div
@@ -594,7 +594,7 @@ class SingleTicketContainer extends React.Component {
                           />
                           <TruTabSelector
                             selectorId={1}
-                            label='Comments'
+                            label='Comentários'
                             showBadge={true}
                             badgeText={this.ticket ? this.ticket.comments && this.ticket.comments.length : 0}
                           />
@@ -730,7 +730,7 @@ class SingleTicketContainer extends React.Component {
                                       className='uk-button uk-button-accent'
                                       style={{ padding: '10px 15px' }}
                                     >
-                                      Post Comment
+                                      Enviar Comentário
                                     </button>
                                   </div>
                                 </div>

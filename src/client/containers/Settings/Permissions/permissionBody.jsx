@@ -221,7 +221,7 @@ class PermissionBody extends React.Component {
           />
           <PermissionGroupPartial
             ref={i => (this.commentPermGroup = i)}
-            title={'Comments'}
+            title={'Comentários'}
             role={this.props.role}
             grants={this.commentGrants}
             subtitle={'Ticket Comments Permissions'}

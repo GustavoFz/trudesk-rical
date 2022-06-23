@@ -183,7 +183,7 @@ class CreateTicketModal extends React.Component {
       <BaseModal {...this.props} options={{ bgclose: false }}>
         <form className={'uk-form-stacked'} onSubmit={e => this.onFormSubmit(e)}>
           <div className='uk-margin-medium-bottom'>
-            <label>Subject</label>
+            <label>Assunto</label>
             <input
               type='text'
               name={'subject'}
@@ -208,7 +208,7 @@ class CreateTicketModal extends React.Component {
                 </GridItem>
               )}
               <GridItem width={allowAgentUserTickets ? '2-3' : '1-1'}>
-                <label className={'uk-form-label'}>Group</label>
+                <label className={'uk-form-label'}>Grupo</label>
                 <SingleSelect
                   showTextbox={false}
                   items={mappedGroups}
@@ -223,7 +223,7 @@ class CreateTicketModal extends React.Component {
           <div className='uk-margin-medium-bottom'>
             <Grid>
               <GridItem width={'1-3'}>
-                <label className={'uk-form-label'}>Type</label>
+                <label className={'uk-form-label'}>Tipo</label>
                 <SingleSelect
                   showTextbox={false}
                   items={mappedTicketTypes}
@@ -248,7 +248,7 @@ class CreateTicketModal extends React.Component {
             </Grid>
           </div>
           <div className='uk-margin-medium-bottom'>
-            <label className={'uk-form-label'}>Priority</label>
+            <label className={'uk-form-label'}>Prioridade</label>
             <div
               ref={i => (this.priorityLoader = i)}
               style={{ height: '32px', width: '32px', position: 'relative' }}
@@ -289,7 +289,7 @@ class CreateTicketModal extends React.Component {
             </div>
           </div>
           <div className='uk-margin-medium-bottom'>
-            <span>Description</span>
+            <span>Descrição</span>
             <div className='error-border-wrap uk-clearfix'>
               <EasyMDE
                 ref={i => (this.issueMde = i)}
@@ -300,9 +300,8 @@ class CreateTicketModal extends React.Component {
               />
             </div>
             <span style={{ marginTop: '6px', display: 'inline-block', fontSize: '11px' }} className={'uk-text-muted'}>
-              Please try to be as specific as possible. Please include any details you think may be relevant, such as
+              Por favor, tente ser o mais específico possível. Inclua quaisquer detalhes que considere relevantes, como as etapas de solução de problemas que você executou.
               {/* eslint-disable-next-line react/no-unescaped-entities */}
-              troubleshooting steps you've taken.
             </span>
           </div>
           <div className='uk-modal-footer uk-text-right'>

@@ -1,7 +1,7 @@
 <ion-view>
   <ion-nav-title style="font-size: 12px; font-family: 'Open Sans', sans-serif; font-weight: 400;line-height: 16px;display:inline-block;margin-top: 10px;">
     {{conversation.partner.fullname}}
-    <span style="font-size:12px; font-weight: 300;color:#ccc;display:block;" ng-if="isUserOnline(onlineUsers, conversation.partner)">Active Now</span>
+    <span style="font-size:12px; font-weight: 300;color:#ccc;display:block;" ng-if="isUserOnline(onlineUsers, conversation.partner)">Ativo Agora</span>
     <span style="font-size:12px; font-weight: 300;color:#ccc;display:block;" ng-if="!isUserOnline(onlineUsers, conversation.partner)" am-time-ago="conversation.partner.lastOnline"></span>
   </ion-nav-title>
 
@@ -63,6 +63,6 @@
   </ion-content>
   <ion-footer-bar class="message-textbox" keyboard-attach>
         <textarea id="message-textarea" rows="1" placeholder="Type your message..." ng-model="message.body" ng-keydown="chatTyping($event);" msd-elastic></textarea>
-        <button class="button button-clear message-send-button" ng-click="sendChatMessage($event);">Send</button>
+        <button class="button button-clear message-send-button" ng-click="sendChatMessage($event);">Enviar</button>
     </ion-footer-bar>
 </ion-view>

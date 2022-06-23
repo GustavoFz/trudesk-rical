@@ -25,9 +25,9 @@ commonV2.login = async (req, res) => {
 
   try {
     const user = await User.getUserByUsername(username)
-    if (!user) return apiUtils.sendApiError(res, 401, 'Invalid Username/Password')
+    if (!user) return apiUtils.sendApiError(res, 401, 'Usuário/Senha Invalido')
 
-    if (!User.validate(password, user.password)) return apiUtils.sendApiError(res, 401, 'Invalid Username/Password')
+    if (!User.validate(password, user.password)) return apiUtils.sendApiError(res, 401, 'Usuário/Senha Invalido')
 
     const tokens = await apiUtils.generateJWTToken(user)
 

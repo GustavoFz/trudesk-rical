@@ -65,7 +65,7 @@ class ConversationsDropdownPartial extends React.Component {
         leftOffset={'4'}
         rightComponent={
           <a href={'/messages/startconversation'} className={'hoverUnderline'}>
-            Start Conversation
+            Iniciar Conversa
           </a>
         }
       >

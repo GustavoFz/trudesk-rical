@@ -1311,7 +1311,7 @@ angular
                   showError('Could not connect. Please check server and try again.')
                   break
                 case 401:
-                  showError('Invalid Username / Password')
+                  showError('Usuário / Senha Invalido')
                   break
                 default:
                   showError('Could not connect. Please check server and try again.')
@@ -2713,7 +2713,7 @@ angular
 
     $scope.showActionSheet = function ($event, $ticket) {
       $ionicListDelegate.closeOptionButtons()
-      var buttons = [{ text: 'Add Comment' }]
+      var buttons = [{ text: 'Adicionar Comentário' }]
 
       if ($scope.isAgent) {
         buttons.push({ text: 'Open' })
